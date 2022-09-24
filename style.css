@@ -5,6 +5,7 @@
     padding: 0px;
     margin: 0;
     font-family: 'Inter', sans-serif;
+    line-height: 1.5;
 }
 
 body {
@@ -30,7 +31,8 @@ a {
 #landing__page,
 #qualityWork,
 #steps,
-#values {
+#values,
+#pricing {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -210,7 +212,8 @@ p {
 
 #qualityWork,
 #steps,
-#values {
+#values,
+#pricing {
     padding: 96px 0;
 }
 
@@ -338,6 +341,7 @@ h6 {
 .values__information--img {
     width: 20px;
     opacity: .5;
+    flex-shrink: .80;
 }
 
 .values__information--lists {
@@ -363,4 +367,112 @@ h6 {
 .values__information--wapper {
     display: flex;
     align-items: center;
+}
+
+.color__red {
+    background-color: #feb2b2;
+}
+
+/* PRICING */
+#pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pricing__para {
+    margin: 0;
+    margin-top: 16px;
+}
+
+.pricing__lists {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pricing__list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(100% / 3);
+    border: 2px solid rgb(226, 232, 240);
+    margin: 64px 32px 0 0;
+    padding: 8px 32px 0 32px;
+}
+
+.pricing__list--title {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+    line-height: 1.65;
+    color: rgb(26 32 44);
+}
+
+.pricing__list--buttonWrapper {
+    padding: 32px;
+}
+
+.pricing__list--button {
+    position: relative;
+    border-radius: 999px;
+    border-width: 0;
+    padding: 16px 32px;
+    color: #f7fafc;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.pricing__list--buttonGreen {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.pricing__list--buttonWhite {
+    color: #6145ff;
+}
+
+.pricing__list--buttonRed {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.pricing__list--name,
+.pricing__list--price,
+.pricing__list--duration {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pricing__list--price {
+    font-size: 48px;
+}
+
+.pricing__list--duration {
+    font-size: 16px;
+    color: #a0aec0;
+}
+
+.pricing__list--subName {
+    font-size: 20px;
+    color: #1a202c;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    width: 250px;
+}
+
+.pricing__list--information {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing__list__infoMargin {
+    margin-top: 20px;
+    color: #718096;
+    font-weight: 500;
+}
+
+.pricing__list--information {
+    border-top: 2px solid rgb(226, 232, 240);
+    border-bottom: 2px solid rgb(226, 232, 240);
+    padding: 32px;
+    width: 100%;
 }
