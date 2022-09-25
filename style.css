@@ -4,7 +4,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: Inter, system-ui;
     line-height: 1.5;
 }
 
@@ -32,7 +32,9 @@ a {
 #qualityWork,
 #steps,
 #values,
-#pricing {
+#pricing,
+#testimonials,
+#faqs {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -213,7 +215,9 @@ p {
 #qualityWork,
 #steps,
 #values,
-#pricing {
+#pricing,
+#testimonials,
+#faqs {
     padding: 96px 0;
 }
 
@@ -382,35 +386,10 @@ h6 {
 }
 
 .pricing__para {
+    font-size: 18px;
+    max-width: 36rem;
     margin: 0;
     margin-top: 16px;
-}
-
-.pricing__lists {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.pricing__list {
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: calc(100% / 3);
-    border: 2px solid rgb(226, 232, 240);
-    margin: 64px 32px 0 0;
-    padding: 8px 32px 0 32px;
-}
-
-.pricing__list--title {
-    display: flex;
-    flex-direction: column;
-    padding: 32px 0;
-    line-height: 1.65;
-    color: rgb(26 32 44);
-}
-
-.pricing__list--buttonWrapper {
-    padding: 32px;
 }
 
 .pricing__list--button {
@@ -428,6 +407,7 @@ h6 {
 }
 
 .pricing__list--buttonWhite {
+    /* background-color: rgb(247 250 252); */
     color: #6145ff;
 }
 
@@ -443,6 +423,8 @@ h6 {
 }
 
 .pricing__list--price {
+    width: auto;
+    margin: 4px 0;
     font-size: 48px;
 }
 
@@ -456,12 +438,54 @@ h6 {
     color: #1a202c;
     letter-spacing: 0.025em;
     font-weight: 700;
-    width: 250px;
+}
+
+.pricing__lists {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pricing__list {
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(100% / 3);
+    margin: 64px 32px 0 0;
+    border: 2px solid rgb(226, 232, 240);
+    border-radius: 8px;
+}
+
+.pricing__list--title {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+    line-height: 1.65;
+    color: rgb(26 32 44);
+
+}
+
+.pricing__list--topBorder {
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    right: -1px;
+    height: 8px;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.pricing__list--topBorderEnterprise {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
 .pricing__list--information {
     display: flex;
     flex-direction: column;
+    border-top: 2px solid rgb(226, 232, 240);
+    border-bottom: 2px solid rgb(226, 232, 240);
+    padding: 32px;
 }
 
 .pricing__list__infoMargin {
@@ -470,9 +494,89 @@ h6 {
     font-weight: 500;
 }
 
-.pricing__list--information {
-    border-top: 2px solid rgb(226, 232, 240);
-    border-bottom: 2px solid rgb(226, 232, 240);
+.pricing__list--buttonWrapper {
     padding: 32px;
+}
+
+.pricing__list--business {
+    background-image: linear-gradient(135deg, rgb(56, 178, 172) 0%, rgb(245, 101, 101) 100%);
+    border-top: 0px;
+}
+
+.pricing__whiteText {
+    color: #f7fafc;
+}
+
+.pricing__greyText {
+    color: #e2e8f0;
+}
+
+.pricing__list--titleBusinessMargin {
+    padding: 32px 0 32px 0;
+}
+
+/* TESTIMONIALS */
+
+.testimonials--wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+}
+
+.testimonials__img--wrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.testiomonials__img {
     width: 100%;
+}
+
+.testimonials__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 64px;
+    width: 50%;
+}
+
+.testimonials__para {
+    font-size: 18px;
+    margin: 24px 0 0 0;
+}
+
+.testimonials__review--wrapper {
+    width: 100%;
+    height: 336px;
+    margin-top: 40px;
+    background-color: rgba(255, 0, 0, 0.241);
+}
+
+/* FAQS */
+
+.faqs__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.faqs__title--para {
+    margin: 16px 0 0 0;
+    font-size: 18px;
+    font-weight: 500;
+    width: 576px;
+}
+
+.faqs__description--Wrapper {
+    width: 100%;
+    height: 200px;
+}
+
+.faqs__description {
+    margin: 48px auto 0 auto;
+    width: 896px;
+    height: 491.4px;
+    background-color: blue;
 }
