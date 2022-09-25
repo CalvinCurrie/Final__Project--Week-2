@@ -8,7 +8,7 @@
     line-height: 1.5;
 }
 
-body {
+main {
     padding: 32px;
 }
 
@@ -34,7 +34,9 @@ a {
 #values,
 #pricing,
 #testimonials,
-#faqs {
+#faqs,
+#endPage,
+.footer__description {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -217,7 +219,9 @@ p {
 #values,
 #pricing,
 #testimonials,
-#faqs {
+#faqs,
+#endPage,
+.footer__description {
     padding: 96px 0;
 }
 
@@ -579,4 +583,65 @@ h6 {
     width: 896px;
     height: 491.4px;
     background-color: blue;
+}
+
+/* END OF PAGE */
+
+.endPage--wrapper {
+    width: 100%;
+    background-color: rgb(100 21 255);
+    border-radius: 8px;
+}
+
+.endPage__button {
+    padding: 20px 40px;
+    margin: 0;
+    border-radius: 9999px;
+    border: 1px solid white;
+    font-size: 16px;
+    font-weight: 700;
+    color: #f7fafc;
+}
+
+.endPage__button--getStarted {
+    background-color: rgb(245 101 101);
+    border-color: transparent;
+    margin-right: 32px;
+}
+
+.endPage__button--contactUs {
+    border-color: rgb(160 174 192);
+}
+
+.endpage__description {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 282px;
+    margin: 0 128px;
+    padding: 0 32px;
+}
+
+.endPage__button--wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.endPage--title {
+    width: 50%;
+    font-size: 30px;
+    color: #f7fafc;
+    font-weight: 500;
+}
+
+/* FOOTER */
+.footer--wrapper {
+    width: 100%;
+    background-color: red;
+}
+
+.footer__description--wrapper {
+    display: flex;
+    justify-content: space-between;
 }
