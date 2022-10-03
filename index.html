@@ -8,52 +8,61 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section id="landing__page">
-      <nav>
-        <div class="logo">
-          <img class="logo--img" src="./assets/reactlogo.svg" alt="logo" />
-          <span class="logo--txt">Treact</span>
-        </div>
-        <div class="nav__list">
-          <a href="">About</a>
-          <a href="">Blog</a>
-          <a href="">Pricing</a>
-          <a href="">Contact Us</a>
-          <a class="nav__list--logins" href="">Login</a>
-          <a class="nav__list--primary" href="">Sign Up</a>
-        </div>
-      </nav>
-
-      <header class="home__landing">
-        <div class="home__description">
-          <h1>
-            Beautiful React Templates <span class="purple">for you.</span>
-          </h1>
-          <p class="home__description--para">
-            Our templates are easy to setup, understand and customize. Fully
-            modular components with a variety of pages and components.
-          </p>
-          <form>
-            <input type="email" placeholder="Your E-mail Address" />
-            <button>Get Started</button>
-          </form>
-          <p class="trusted__customer--para">OUR TRUSTED CUSTOMERS</p>
-          <figure class="trusted__customer__img--wrapper">
-            <img
-              class="home__customer--logo"
-              src="./assets/customers-logo-strip.png"
-              alt=""
-            />
-          </figure>
-        </div>
-
-        <figure class="home__img--wrapper">
-          <img class="home__img" src="./assets/home__img.svg" alt="" />
-        </figure>
-      </header>
-    </section>
-
     <main>
+      <!-- LANDING PAGE -->
+
+      <section id="landing__page">
+        <div class="landing__page--wrapper">
+          <nav>
+            <div class="logo">
+              <img class="logo--img" src="./assets/reactlogo.svg" alt="logo" />
+              <span class="logo--txt">Treact</span>
+            </div>
+            <div class="nav__list">
+              <a href="">About</a>
+              <a href="">Blog</a>
+              <a href="">Pricing</a>
+              <a href="">Contact Us</a>
+              <a class="nav__list--logins" href="">Login</a>
+              <a class="nav__list--primary" href="">Sign Up</a>
+            </div>
+          </nav>
+
+          <header class="home__landing">
+            <div class="home__description">
+              <h1 class="home__description--h1">
+                Beautiful React Templates <span class="purple">for you.</span>
+              </h1>
+              <p class="home__description--para">
+                Our templates are easy to setup, understand and customize. Fully
+                modular components with a variety of pages and components.
+              </p>
+              <form>
+                <input type="email" placeholder="Your E-mail Address" />
+                <button class="home__description--button">Get Started</button>
+              </form>
+
+              <div class="trusted__customer--wrapper">
+                <p class="trusted__customer--para">OUR TRUSTED CUSTOMERS</p>
+                <figure class="trusted__customer__img--wrapper">
+                  <img
+                    class="home__customer--logo"
+                    src="./assets/customers-logo-strip.png"
+                    alt=""
+                  />
+                </figure>
+              </div>
+            </div>
+
+            <figure class="home__img--wrapper">
+              <img class="home__img" src="./assets/home__img.svg" alt="" />
+            </figure>
+          </header>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+
       <section id="features">
         <div class="container">
           <div class="features__description">
@@ -190,13 +199,14 @@
           </div>
         </div>
       </section>
+      <!-- QUALITY WORK -->
       <section id="qualityWork">
         <div class="qualityWork--Wrapper">
           <div class="quality__work--description">
             <h5><span class="purple">QUALITY WORK</span></h5>
             <h2>
               Designed&nbsp;&amp;&nbsp;Developed by
-              <span class="purple">Professionals</span>
+              <span class="purple">Professionals.</span>
             </h2>
             <p class="qualityWork--para">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -219,8 +229,10 @@
         </div>
       </section>
 
+      <!-- STEPS -->
+
       <section id="steps">
-        <div class="row">
+        <div class="row steps--row">
           <figure class="steps__img--wrapper">
             <img class="steps__img" src="./assets/steps__img.png" alt="" />
           </figure>
@@ -265,6 +277,9 @@
           </div>
         </div>
       </section>
+
+      <!-- VALUES -->
+
       <section id="values">
         <div class="row">
           <div class="values__information">
@@ -299,7 +314,7 @@
                 </p>
               </div>
 
-              <div class="values__information--list">
+              <div class="values__information--list values__information--list2">
                 <div class="values__information--wapper">
                   <figure class="values__information--imgWapper color__red">
                     <img
@@ -465,7 +480,7 @@
         <div class="row faqs__wrapper">
           <div class="faqs__title">
             <h5>FAQS</h5>
-            <h2>You have <span class="purple">Questions</span></h2>
+            <h2>You have <span class="purple">Questions ?</span></h2>
             <p class="faqs__title--para">
               And we have got answers to all of them. Lorem ipsum dolor sit
               amet, consectetur adipiscing elit.
@@ -500,62 +515,80 @@
     <footer>
       <div class="footer--wrapper">
         <div class="footer__description--wrapper">
-          <div class="main footer__description">
+          <div class="footer__description">
             <h4>MAIN</h4>
-            <p>
-              Blog <br />
-              FAQS <br />
-              Support <br />
-              About Us
-            </p>
+            <ul class="footer__description--list">
+              <li>Blog</li>
+              <li>FAQS</li>
+              <li>Support</li>
+              <li>About Us</li>
+            </ul>
           </div>
-          <div class="product footer__description">
+
+          <div class="footer__description">
             <h4>PRODUCT</h4>
-            <p>
-              Log In <br />
-              Personal <br />
-              Business <br />
-              Team
-            </p>
+            <ul class="footer__description--list">
+              <li>Log In</li>
+              <li>Personal</li>
+              <li>Business</li>
+              <li>Team</li>
+            </ul>
           </div>
-          <div class="press footer__description">
+
+          <div class="footer__description">
             <h4>PRESS</h4>
-            <p>
-              Logos <br />
-              Events <br />
-              Stories <br />
-              Office
-            </p>
+            <ul class="footer__description--list">
+              <li>Logos</li>
+              <li>Events</li>
+              <li>Stories</li>
+              <li>Office</li>
+            </ul>
           </div>
-          <div class="team footer__description">
+
+          <div class="footer__description">
             <h4>TEAM</h4>
-            <p>
-              Career <br />
-              Founders <br />
-              Culture <br />Onboarding
-            </p>
+            <ul class="footer__description--list">
+              <li>Career</li>
+              <li>Founders</li>
+              <li>Culture</li>
+              <li>Onboarding</li>
+            </ul>
           </div>
-          <div class="legal footer__description">
+
+          <div class="footer__description">
             <h4>LEGAL</h4>
-            <p>
-              GDPR <br />
-              Privacy Policy <br />
-              Terms of Service <br />
-              Disclaimer
-            </p>
+            <ul class="footer__description--list">
+              <li>GDPR</li>
+              <li>Privacy Policy</li>
+              <li>Terms of Service</li>
+              <li>Disclaimer</li>
+            </ul>
           </div>
         </div>
+
         <div class="footer--lineBreak"></div>
 
         <div class="footer__bottom">
-          <figure class="logo">
-            <img src="./assets/reactlogo.svg" alt="" />
-            <span class="logo--txt">Treact</span>
-          </figure>
+          <div class="logo">
+            <img class="logo--img" src="./assets/logo-light.svg" alt="logo" />
+            <span class="logo--txtWhite">Treact Inc.</span>
+          </div>
           <div class="copyright--wrapper">
             © 2018 Treact Inc. All Rights Reserved.
           </div>
-          <figure class="socials--wrapper"></figure>
+          <div class="socials--wrapper">
+            <a class="socialsImg--Wrapper" href="">
+              <img class="socials--img" src="./assets/github.svg" alt="" />
+            </a>
+
+            <a class="socialsImg--Wrapper" href="">
+              <img class="socials--img" src="./assets/snapchat.svg" alt="" />
+            </a>
+
+            <a class="socialsImg--Wrapper" href="">
+              <img class="socials--img" src="./assets/instagram.svg" alt="" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
