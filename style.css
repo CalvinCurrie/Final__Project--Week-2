@@ -8,7 +8,8 @@
     line-height: 1.5;
 }
 
-a {
+a,
+button {
     cursor: no-drop
 }
 
@@ -16,9 +17,6 @@ main {
     padding: 32px;
 }
 
-button {
-    cursor: pointer;
-}
 
 li {
     list-style: none;
@@ -600,14 +598,15 @@ h6 {
 
 .testimonials--wrapper {
     display: flex;
-    flex-direction: row-reverse;
     margin: 0 auto;
 }
 
 .testimonials__img--wrapper {
-    display: flex;
-    align-items: center;
     width: 50%;
+}
+
+.testimonials__img {
+    width: 100%;
 }
 
 .testiomonials__img {
@@ -628,10 +627,93 @@ h6 {
 }
 
 .testimonials__review--wrapper {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 336px;
     margin-top: 40px;
-    background-color: rgba(255, 0, 0, 0.241);
+}
+
+.testiomials__review--title {
+    color: #243e63;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.testiomials__review--para {
+    font-size: 16px;
+    color: #4a5568;
+    font-weight: 500;
+    margin: 16px 0 40px 0;
+}
+
+.testionials__review--bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile__picture--User {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.testiomials__review--userDetails {
+    display: flex;
+}
+
+.testiomials__review--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 24px;
+}
+
+.testiomials__review--name {
+    color: #243e63;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.testiomials__review--occupation {
+    color: #7c8ba1;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.testionials__navigation {
+    display: flex;
+    align-items: center;
+}
+
+.testionials__navigation--buttonWrapper {
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.testionials__navigation--button {
+    margin: 0 12px;
+    padding: 16px;
+    border: 0px;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+}
+
+.divider {
+    height: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.396);
+    border-left: 1px;
+}
+
+.testimonials__navigation--arrow {
+    color: rgb(100 21 255);
+}
+
+.fa-star {
+    color: rgb(246 173 85);
 }
 
 /* FAQS */
@@ -656,10 +738,39 @@ h6 {
 }
 
 .faqs__description {
+    display: flex;
+    flex-direction: column;
     margin: 48px auto 0 auto;
     width: 896px;
     height: 491.4px;
-    background-color: blue;
+}
+
+.faqs__description--bars {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: start;
+    margin-top: 20px;
+    padding: 16px 40px;
+    background-color: #edf2f7;
+    border-radius: 8px;
+}
+
+.faqs__description--style {
+    font-size: 20px;
+    color: #2d3748;
+    font-weight: 600;
+}
+
+.faqs__description--arrowWrapper {
+    margin-left: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+.faqs__description--arrow {
+    width: auto;
+    height: auto;
 }
 
 /* END OF PAGE */
@@ -741,7 +852,8 @@ ul {
     margin-top: 24px;
 }
 
-li, .footer__description--items {
+li,
+.footer__description--items {
     margin: 0;
     margin-top: 12px;
 }
